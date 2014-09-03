@@ -9,7 +9,7 @@
 		<key>BRANCH</key>
 		<string>release</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/TextMate2</string>
+		<string>TextMate2</string>
 		<key>NAME</key>
 		<string>TextMate2</string>
 		<key>pkginfo</key>

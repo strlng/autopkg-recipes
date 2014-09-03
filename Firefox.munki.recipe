@@ -9,7 +9,7 @@
 		<key>LOCALE</key>
 		<string>en_US</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/firefox</string>
+		<string>Mozilla/Firefox</string>
 		<key>NAME</key>
 		<string>Firefox</string>
 		<key>RELEASE</key>
@@ -30,22 +30,22 @@
 			<true/>
 			<key>postinstall_script</key>
 			<string>#!/bin/bash
-mkdir -p -m 755 /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
-mkdir -p -m 755 /Library/Application\ Support/FirefoxCCK/
 
-if [ ! -L /Applications/Firefox.app/Contents/MacOS/distribution/bundles/sjmc-cck@journalism.wisc.edu ];
+if [ -d /Library/Application\ Support/FirefoxCCK/ ]
 then
- ln -s /Library/Application\ Support/FirefoxCCK/sjmc-cck@journalism.wisc.edu /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
-fi
-
-if [ ! -L /Applications/Firefox.app/Contents/MacOS/override.ini ];
-then
- ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/
-fi
-
-if [ ! -L /Applications/Firefox.app/Contents/MacOS/browser/override.ini ];
-then
- ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/browser/
+	mkdir -p -m 755 /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
+	if [ ! -L /Applications/Firefox.app/Contents/MacOS/distribution/bundles/sjmc-cck@journalism.wisc.edu ];
+	then
+ 		ln -s /Library/Application\ Support/FirefoxCCK/sjmc-cck@journalism.wisc.edu /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
+	fi
+	if [ ! -L /Applications/Firefox.app/Contents/MacOS/override.ini ];
+	then
+		ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/
+	fi
+	if [ ! -L /Applications/Firefox.app/Contents/MacOS/browser/override.ini ];
+	then
+		ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/browser/
+	fi
 fi</string>
 		</dict>
 	</dict>
