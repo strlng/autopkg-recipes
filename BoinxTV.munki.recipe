@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.BoinxTV</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>Boinx</string>
+		<key>NAME</key>
+		<string>BoinxTV</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>http://feeds.boinx.com/BoinxtvAppcast</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Turns your Mac into a TV studio for creating Live to Disk, Live to Internet and Live to Stage video. Record stunning studio shows, podcasts, sports events, concerts, interviews, sermons, seminars and more using your Mac and multiple cameras.</string>
+			<key>display_name</key>
+			<string>Boinx Software BoinxTV</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>i386</string>
+				<string>x86_64</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jaharmi.munki.BoinxTV</string>
+</dict>
+</plist>
