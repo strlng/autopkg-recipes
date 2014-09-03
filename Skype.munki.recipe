@@ -18,6 +18,10 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Internet</string>
+			<key>developer</key>
+			<string></string>
 			<key>description</key>
 			<string>Calling, seeing, messaging and sharing with others – wherever they are.</string>
 			<key>display_name</key>

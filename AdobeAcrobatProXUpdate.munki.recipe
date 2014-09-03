@@ -24,6 +24,10 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Adobe Creative Cloud</string>
+			<key>developer</key>
+			<string>Adobe</string>
 			<key>description</key>
 			<string></string>
 			<key>display_name</key>
