@@ -9,6 +9,17 @@
 		<key>NAME</key>
 		<string>Audacity</string>
 	</dict>
+	<dict>
+	    <key>Processor</key>
+	    <string>URLTextSearcher</string>
+	    <key>Arguments</key>
+	    <dict>
+	        <key>url</key>
+	        <string>http://audacity.sourceforge.net/download/mac</string>
+	        <key>re_pattern</key>
+	        <string>(?P&lt;url&gt;http.[sour|goog].*?dmg)</string>
+	    </dict>
+	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.timsutton.download.audacity</string>
 </dict>
