@@ -18,6 +18,10 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Multimedia</string>
+			<key>developer</key>
+			<string></string>
 			<key>description</key>
 			<string>Turns your Mac into a TV studio for creating Live to Disk, Live to Internet and Live to Stage video. Record stunning studio shows, podcasts, sports events, concerts, interviews, sermons, seminars and more using your Mac and multiple cameras.</string>
 			<key>display_name</key>
