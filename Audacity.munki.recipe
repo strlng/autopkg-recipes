@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/Audacity</string>
+		<string>Audacity</string>
 		<key>NAME</key>
 		<string>Audacity</string>
 		<key>pkginfo</key>
@@ -16,6 +16,10 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Multimedia</string>
+			<key>developer</key>
+			<string></string>
 			<key>description</key>
 			<string>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.</string>
 			<key>display_name</key>

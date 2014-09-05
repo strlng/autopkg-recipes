@@ -16,8 +16,12 @@
 		<dict>
 			<key>catalogs</key>
 			<array>
-				<string>release</string>
+				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>developer</key>
+			<string>Apple</string>
 			<key>display_name</key>
 			<string>%NAME%</string>
 			<key>name</key>
