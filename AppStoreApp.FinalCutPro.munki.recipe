@@ -9,7 +9,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>Apple/FinalCutPro</string>
 		<key>NAME</key>
-		<string>FinalCutPro</string>
+		<string>Final Cut Pro</string>
 		<key>PATH</key>
 		<string>/Applications/%NAME%.app</string>
 		<key>pkginfo</key>
