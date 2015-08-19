@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Audacity</string>
+		<string>apps/audacity</string>
 		<key>NAME</key>
 		<string>Audacity</string>
 		<key>pkginfo</key>

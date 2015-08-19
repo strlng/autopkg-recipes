@@ -31,6 +31,6 @@
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.sterlinganderson.nmcspadden.munki.appstore</string>
+	<string>com.github.nmcspadden.munki.appstore</string>
 </dict>
 </plist>

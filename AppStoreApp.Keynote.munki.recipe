@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Apple/Keynote</string>
+		<string>apps/apple/keynote</string>
 		<key>NAME</key>
 		<string>Keynote</string>
 		<key>PATH</key>
@@ -31,6 +31,6 @@
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.sterlinganderson.nmcspadden.munki.appstore</string>
+	<string>com.github.nmcspadden.munki.appstore</string>
 </dict>
 </plist>

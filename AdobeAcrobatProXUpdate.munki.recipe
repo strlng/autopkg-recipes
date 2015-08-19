@@ -9,7 +9,7 @@
 		<key>MAJOR_VERSION</key>
 		<string>11</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Adobe/AcrobatPro/Updates</string>
+		<string>apps/adobe/updates/acrobatpro</string>
 		<key>NAME</key>
 		<string>AdobeAcrobatProX_Update</string>
 		<key>VERSION</key>
