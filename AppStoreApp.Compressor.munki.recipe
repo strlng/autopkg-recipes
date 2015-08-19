@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.AppStoreApp.Compressor</string>
+	<string>com.github.sterlinganderson.autopkg.AppStoreApp.Compressor</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>

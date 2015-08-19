@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.Skype</string>
+	<string>com.github.sterlinganderson.autopkg.Skype</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>

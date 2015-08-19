@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.Silverlight</string>
+	<string>com.github.sterlinganderson.autopkg.Silverlight</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>

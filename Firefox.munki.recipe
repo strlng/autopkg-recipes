@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.Firefox</string>
+	<string>com.github.sterlinganderson.autopkg.Firefox</string>
 	<key>Input</key>
 	<dict>
 		<key>LOCALE</key>
