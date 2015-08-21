@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Apple/iMovie</string>
+		<string>apps/apple/iMovie</string>
 		<key>NAME</key>
 		<string>iMovie</string>
 		<key>PATH</key>

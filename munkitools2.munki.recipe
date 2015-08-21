@@ -43,6 +43,8 @@
 	<dict>
 		<key>category</key>
 		<string>Utilities</string>
+		<key>developer</key>
+		<string>Munki Developers</string>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.munki.munkitools2</string>

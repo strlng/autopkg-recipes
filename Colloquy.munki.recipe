@@ -21,7 +21,7 @@
 			<key>category</key>
 			<string>Internet</string>
 			<key>developer</key>
-			<string></string>
+			<string>Colloquy Developers</string>
 			<key>description</key>
 			<string>Traditionally, chat clients on the Mac have been anything but glamorous. Colloquy is an advanced IRC, SILC &amp; ICB client which aims to fill this void. By adhering to Mac OS X interface conventions, Colloquy has the look and feel of a quality Mac application.</string>
 			<key>display_name</key>
