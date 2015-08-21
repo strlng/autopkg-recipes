@@ -39,6 +39,11 @@
 		<key>NAME</key>
 		<string>munkitools2</string>
 	</dict>
+	<key>pkginfo</key>
+	<dict>
+		<key>category</key>
+		<string>Utilities</string>
+	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.munki.munkitools2</string>
 </dict>
