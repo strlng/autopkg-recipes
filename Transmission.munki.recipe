@@ -6,6 +6,8 @@
 	<string>com.github.sterlinganderson.autopkg.Transmission</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/transmission</string>
 		<key>NAME</key>
@@ -20,10 +22,10 @@
 			</array>
 			<key>category</key>
 			<string>Internet</string>
-			<key>developer</key>
-			<string></string>
 			<key>description</key>
 			<string>Transmission bittorrent client runs natively on multiple operating systems.</string>
+			<key>developer</key>
+			<string>Transmission Project</string>
 			<key>display_name</key>
 			<string>Transmission Torrent Client</string>
 			<key>name</key>
@@ -33,6 +35,6 @@
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.jleggat.autopkg-recipes.Transmission.munki</string>
+	<string>com.github.jleggat.Transmission.munki</string>
 </dict>
 </plist>
