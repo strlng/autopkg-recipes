@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.sterlinganderson.autopkg.dockutil</string>
+	<key>Input</key>
+	<dict>
+		<key>DOCKUTIL_URL</key>
+		<string>https://raw.github.com/kcrawford/dockutil/master/scripts/dockutil</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/dockutil</string>
+		<key>NAME</key>
+		<string>dockutil</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>command line tool for managing dock items</string>
+			<key>developer</key>
+			<string>Kyle Crawford</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>preinstall_script</key>
+			<string>#!/bin/sh
+
+mkdir -p '/usr/local/bin'
+	</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jessepeterson.munki.dockutil</string>
+</dict>
+</plist>
