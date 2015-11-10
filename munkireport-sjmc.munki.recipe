@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.sterlinganderson.autopkg.munkireport</string>
+	<string>com.github.sterlinganderson.autopkg.munkireport-sjmc</string>
 	<key>Input</key>
 	<dict>
 		<key>BASEURL</key>
@@ -26,6 +26,8 @@
 			<string>Munkireport</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>baseurl</key>
+			<string>%BASEURL%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
