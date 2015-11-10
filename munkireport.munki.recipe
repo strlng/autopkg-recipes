@@ -12,8 +12,6 @@
 		<string>utilities/munkireport</string>
 		<key>NAME</key>
 		<string>Munkireport</string>
-		<key>BASEURL</key>
-		<string>http://munkireport.journalism.wisc.edu</string>
 		<key>modules</key>
 		<array/>
 		<key>pkginfo</key>
