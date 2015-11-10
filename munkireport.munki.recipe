@@ -27,6 +27,8 @@
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
+			<key>BASEURL</key>
+			<string>http://munkireport.journalism.wisc.edu</string>
 			<true/>
 		</dict>
 	</dict>
