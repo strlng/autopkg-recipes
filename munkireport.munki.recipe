@@ -12,6 +12,8 @@
 		<string>utilities/munkireport</string>
 		<key>NAME</key>
 		<string>Munkireport</string>
+		<key>BASEURL</key>
+		<string>http://munkireport.journalism.wisc.edu</string>
 		<key>modules</key>
 		<array/>
 		<key>pkginfo</key>
@@ -27,8 +29,6 @@
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
-			<key>BASEURL</key>
-			<string>http://munkireport.journalism.wisc.edu</string>
 			<true/>
 		</dict>
 	</dict>
