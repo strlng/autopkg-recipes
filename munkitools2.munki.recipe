@@ -42,7 +42,7 @@
 	<key>pkginfo</key>
 	<dict>
 		<key>category</key>
-		<string>Utilities</string>
+		<string>Utility</string>
 		<key>developer</key>
 		<string>Munki Developers</string>
 	</dict>

@@ -21,7 +21,7 @@
 				<string>testing</string>
 			</array>
 			<key>category</key>
-			<string>Utilities</string>
+			<string>Utility</string>
 			<key>description</key>
 			<string>MunkiAdmin is a GUI for managing munki repositories. It is written with Objective-C and uses in-memory Core Data store as a backend.</string>
 			<key>developer</key>

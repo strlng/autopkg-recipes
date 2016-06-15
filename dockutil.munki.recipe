@@ -9,7 +9,7 @@
 		<key>DOCKUTIL_URL</key>
 		<string>https://raw.github.com/kcrawford/dockutil/master/scripts/dockutil</string>
 		<key>MUNKI_CATEGORY</key>
-		<string>Utilities</string>
+		<string>Utility</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/dockutil</string>
 		<key>NAME</key>

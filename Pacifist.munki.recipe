@@ -18,6 +18,8 @@
 			<array>
 				<string>production</string>
 			</array>
+			<key>category</key>
+			<string>Utility</string>
 			<key>description</key>
 			<string>Pacifist is a shareware application that opens Mac OS X .pkg package files, .dmg disk images, and .zip, .tar, .tar.gz, .tar.bz2, and .xar archives and allows you to extract individual files and folders out of them.</string>
 			<key>display_name</key>

@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/ripeware</string>
+		<string>apps/presentationprompter</string>
 		<key>NAME</key>
 		<string>Presentation Prompter</string>
 		<key>PATH</key>

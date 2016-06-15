@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/apple/GarageBand</string>
+		<string>apps/apple/garageband</string>
 		<key>NAME</key>
 		<string>GarageBand</string>
 		<key>PATH</key>

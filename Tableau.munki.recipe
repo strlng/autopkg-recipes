@@ -9,7 +9,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>http://www.tableau.com/downloads/desktop/mac</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/Tableau</string>
+		<string>apps/tableau</string>
 		<key>NAME</key>
 		<string>TableauDesktop</string>
 		<key>pkginfo</key>
@@ -18,6 +18,8 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
 			<key>description</key>
 			<string>Tableau Desktop is data visualization software that lets you see and understand data in minutes.</string>
 			<key>display_name</key>

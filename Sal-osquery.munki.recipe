@@ -16,6 +16,8 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utility</string>
 			<key>description</key>
 			<string>osquery configuration for Sal.</string>
 			<key>name</key>

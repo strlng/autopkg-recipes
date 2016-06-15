@@ -23,7 +23,7 @@
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>category</key>
-			<string>Utilities</string>
+			<string>Utility</string>
 			<key>developer</key>
 			<string>Per Olofsson</string>
 			<key>unattended_install</key>

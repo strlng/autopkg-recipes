@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/Coda2</string>
+		<string>apps/panic/coda2</string>
 		<key>NAME</key>
 		<string>Coda2</string>
 		<key>pkginfo</key>
