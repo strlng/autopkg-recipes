@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.ScreenFlow</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/telestream</string>
+		<key>NAME</key>
+		<string>ScreenFlow</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.telestream.net/updater/screenflow/appcast.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Multimedia</string>
+			<key>description</key>
+			<string>Create screen recordings. This requires a license, if you do not have one you will not be able to use it.</string>
+			<key>developer</key>
+			<string>Telestream LLC</string>
+			<key>display_name</key>
+			<string>ScreenFlow</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.rderewianko.munki.ScreenFlow</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.rderewianko.download.ScreenFlow</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a7b01315f4a70b0f6b5f87095c409401e5d49570</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rderewianko-recipes/ScreenFlow/ScreenFlow.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b0915752c8dc2ab5e94072f29fa825a0f88d387ecb53801ea3e6e549bc6cc9d4</string>
+			</dict>
+			<key>com.rderewianko.munki.ScreenFlow</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3f9ceb49d51946e48f15822cffb43bd034699b00</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rderewianko-recipes/ScreenFlow/ScreenFlow.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>d6de465b4f175ab99e717812f9099d5cba35636dbef2b13b7e0aa060051b82c2</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

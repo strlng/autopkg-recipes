@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.Microsoft OneNote 365</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>MINIMUM_OS_VERSION</key>
+		<string>10.12.0</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Microsoft OneNote 365</string>
+		<key>PRODUCTID</key>
+		<string>820886</string>
+		<key>SOFTWARETITLE</key>
+		<string>OneNote</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft Auto Update</string>
+				<string>Microsoft Error Reporting</string>
+				<string>Microsoft OneNote</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Your world, organized. Get organized in notebooks you can divide into sections and pages. With easy navigation and search, you’ll always find your notes right where you left them.</string>
+			<key>display_name</key>
+			<string>Microsoft OneNote</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Microsoft OneNote 365</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.munki.Microsoft OneNote 365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>99448e42e47f19a9f1256bef06fcaebee120ccda</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Microsoft OneNote 365/Microsoft OneNote 365.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>620460d02c5a9d70aa0c7b85d7587e3e6690a4f754577a6ad3507897d728f0f2</string>
+			</dict>
+			<key>com.github.rtrouton.download.microsoftonenote365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftOneNote365/MicrosoftOneNote365.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a60cad6107c758ea36cda01540115384839dcffd3bc65189c37ae09bbf820357</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.microsoftonenote365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftOneNote365/MicrosoftOneNote365.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>ca49bdbfeadd303c7161ded60808cfa595d6482f0d9026ac48cc0dbf2b4d39ac</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

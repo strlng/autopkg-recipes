@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.sterlinganderson.autopkg.Firefox</string>
+	<string>com.github.strlng.munki.Firefox</string>
 	<key>Input</key>
 	<dict>
+		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+		<false/>
 		<key>LOCALE</key>
-		<string>en_US</string>
+		<string>en-US</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/firefox</string>
 		<key>NAME</key>
 		<string>Firefox</string>
 		<key>RELEASE</key>
-		<string>latest</string>
+		<string>esr-latest</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -22,8 +24,6 @@
 			</array>
 			<key>category</key>
 			<string>Internet</string>
-			<key>developer</key>
-			<string>Mozilla</string>
 			<key>description</key>
 			<string>Mozilla Firefox is a free and open source web browser.</string>
 			<key>display_name</key>
@@ -32,28 +32,45 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-			<key>postinstall_script</key>
-			<string>#!/bin/bash
-
-if [ -d /Library/Application\ Support/FirefoxCCK/ ]
-then
-	mkdir -p -m 755 /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
-	if [ ! -L /Applications/Firefox.app/Contents/MacOS/distribution/bundles/sjmc-cck@journalism.wisc.edu ];
-	then
- 		ln -s /Library/Application\ Support/FirefoxCCK/sjmc-cck@journalism.wisc.edu /Applications/Firefox.app/Contents/MacOS/distribution/bundles/
-	fi
-	if [ ! -L /Applications/Firefox.app/Contents/MacOS/override.ini ];
-	then
-		ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/
-	fi
-	if [ ! -L /Applications/Firefox.app/Contents/MacOS/browser/override.ini ];
-	then
-		ln -s /Library/Application\ Support/FirefoxCCK/override.ini /Applications/Firefox.app/Contents/MacOS/browser/
-	fi
-fi</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.munki.firefox-rc-en_US</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>MozillaURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>83628dadcfbe7726c7b4fca960eef9d713384c9c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/MozillaURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>3faa6a09292c3a8e1f2fd62c15704d448c62703020674981432ab3d53851a8df</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.firefox-rc-en_US</key>
+			<dict>
+				<key>git_hash</key>
+				<string>192a4b85749fd12fdcc837bb5caa124d487b2538</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>8d1429a6bda5be11cc69eccf1c7f1b6044ecb068f8f3de4a87e359e855f2a05d</string>
+			</dict>
+			<key>com.github.autopkg.munki.firefox-rc-en_US</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8332edca4fbafc1e8aff8c119e571f27b4853bb5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>ca589a917fa5251ad39071dd49b168ed9c6549f4b085e706ea541829c3ec426d</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

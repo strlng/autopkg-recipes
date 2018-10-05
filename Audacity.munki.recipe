@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.sterlinganderson.autopkg.Audacity</string>
+	<string>com.github.strlng.munki.Audacity</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/audacity</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Multimedia</string>
 		<key>NAME</key>
 		<string>Audacity</string>
 		<key>pkginfo</key>
@@ -16,12 +18,10 @@
 			<array>
 				<string>testing</string>
 			</array>
-			<key>category</key>
-			<string>Multimedia</string>
-			<key>developer</key>
-			<string>Audacity Developers</string>
 			<key>description</key>
 			<string>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>display_name</key>
 			<string>Audacity</string>
 			<key>name</key>
@@ -32,5 +32,22 @@
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.timsutton.munki.audacity</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.timsutton.munki.audacity</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4726c10a023ea31ae48c6729191a472b1a56a57f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.timsutton-recipes/Audacity/Audacity.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>9fc91e355e6ed1a6ff8293b486feeaedfa4a2c994a852d55df22cff6f15d4f20</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

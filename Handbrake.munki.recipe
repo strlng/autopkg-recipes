@@ -3,25 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.sterlinganderson.autopkg.Handbrake</string>
+	<string>com.github.strlng.munki.Handbrake</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/handbrake</string>
 		<key>NAME</key>
 		<string>Handbrake</string>
-		<key>SU_FEED_URL</key>
-		<string>http://handbrake.fr/appcast.x86_64.xml</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
-			<key>category</key>
-			<string>Multimedia</string>
-			<key>developer</key>
-			<string>Handbrake Developers</string>
 			<key>description</key>
 			<string>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</string>
 			<key>display_name</key>
@@ -34,5 +28,31 @@
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.munki.Handbrake</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Handbrake</key>
+			<dict>
+				<key>git_hash</key>
+				<string>46e640c178dd4cab5b28b7568aa412646b448049</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Handbrake/Handbrake.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>4a5334e5cf4c950058b281c612b69e11e2693304e4ade66f19b56d1db20a97ac</string>
+			</dict>
+			<key>com.github.autopkg.munki.Handbrake</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5011cb739ce9caa6c4f13d7ea2342ec5205f8f08</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Handbrake/Handbrake.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>d7d2119f6ce67c0f7e72c51f89a91df7864fa0215b98c9016b73c80d250da889</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

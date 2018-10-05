@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.pinpoint</string>
+	<key>Input</key>
+	<dict>
+		<key>GITHUB_REPO</key>
+		<string>clburlison/pinpoint</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/%NAME%</string>
+		<key>NAME</key>
+		<string>pinpoint</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>Python based location script for enabling and finding your Mac.</string>
+			<key>developer</key>
+			<string>Clayton Burlison</string>
+			<key>display_name</key>
+			<string>pinpoint</string>
+			<key>minimum_os_version</key>
+			<string>10.8.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>update_for</key>
+			<array>
+				<string>Munkireport</string>
+			</array>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.clburlison.munki.pinpoint</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.clburlison.download.pinpoint</key>
+			<dict>
+				<key>git_hash</key>
+				<string>45dc5063df777ecdfa089c2c7613d7f3e7d318fc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.clburlison-recipes/pinpoint/pinpoint.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>79e2444561abbe56134faec414d3507dbd3764abf21d0505c584c1a3bf8f5788</string>
+			</dict>
+			<key>com.github.clburlison.munki.pinpoint</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5db37603b2e5cdb35817771be6a7bf0cd6643751</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.clburlison-recipes/pinpoint/pinpoint.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>ccb09a9bd8790958a95e41ead93e90593ef24ee59699a713932eb307083e1889</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

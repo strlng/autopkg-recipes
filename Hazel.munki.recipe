@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.Hazel</string>
+	<key>Input</key>
+	<dict>
+		<key>BUNDLE_ID</key>
+		<string>com.noodlesoft.Hazel</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.noodlesoft.com/Products/Hazel/download</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Hazel</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Automation tool to keep your files and folders organized and tidy.</string>
+			<key>developer</key>
+			<string>Noodlesoft, LLC</string>
+			<key>display_name</key>
+			<string>Hazel</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Hazel</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Hazel</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6e52ad70c66c1189d780f7b0c44ac91af14b852d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Noodlesoft/Hazel.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>40b44a1ccdff1e25b7ccbd3b0889d90aafc986e7e546ce02b34f9bb6f41cf1c1</string>
+			</dict>
+			<key>com.github.homebysix.munki.Hazel</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ef26c8c3849b475bc6410bc0606a9e7fb64390cf</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Noodlesoft/Hazel.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>1c4dd37dd6c45813cca059c5539623473e03092e0d3c2e6d3b9727cf9a3d9bb1</string>
+			</dict>
+			<key>com.github.homebysix.pkg.Hazel</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6e52ad70c66c1189d780f7b0c44ac91af14b852d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Noodlesoft/Hazel.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>297a142b693d0395455da69883a4d9e2e756e26eb50435bd067f557153a03c24</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

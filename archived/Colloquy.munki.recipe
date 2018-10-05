@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.Colloquy</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>http://colloquy.info/downloads/colloquy-latest.zip</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Internet</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/colloquy</string>
+		<key>NAME</key>
+		<string>Colloquy</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>Traditionally, chat clients on the Mac have been anything but glamorous. Colloquy is an advanced IRC, SILC &amp; ICB client which aims to fill this void. By adhering to Mac OS X interface conventions, Colloquy has the look and feel of a quality Mac application.</string>
+			<key>developer</key>
+			<string>javelin</string>
+			<key>display_name</key>
+			<string>%NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>io.github.hjuutilainen.munki.Colloquy</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>io.github.hjuutilainen.download.Colloquy</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d826668862bd195ae91bbc57166468595a061484</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hjuutilainen-recipes/Colloquy/Colloquy.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>3c16e666857c047e1876c6685a4086d91b622413d30f249dc5f7a08ad3b6e9b7</string>
+			</dict>
+			<key>io.github.hjuutilainen.munki.Colloquy</key>
+			<dict>
+				<key>git_hash</key>
+				<string>87af24607c06ba1a3e9ec6ba1765f52154e662d4</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hjuutilainen-recipes/Colloquy/Colloquy.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>cc0a1787f9d31e5f8675aa5eb2452218b8fb6fd8d96e561d7444d046d9ccaa5a</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

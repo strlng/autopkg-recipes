@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.Shimo</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.shimovpn.com/Shimo.zip</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/shimo</string>
+		<key>NAME</key>
+		<string>Shimo</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Security</string>
+			<key>description</key>
+			<string>A versatile VPN client for OS X.</string>
+			<key>developer</key>
+			<string>Feingeist Software, GmbH</string>
+			<key>display_name</key>
+			<string>Shimo</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Shimo</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Shimo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4f95845e835d58b5d55431757ed401698e91fac1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Shimo/Shimo.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>c05319c46fd1db6780981e2091d1cba6d8289733d312e7a2c51a8afc1a040920</string>
+			</dict>
+			<key>com.github.homebysix.munki.Shimo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>beba2134d1477a16a0b6d85166b330f0f6fc2bf4</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Shimo/Shimo.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>13c89cfb7f54306513fb4776b44e71ac3759dca8282541484836131d9920d037</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

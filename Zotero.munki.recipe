@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.Zotero</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/zotero</string>
+		<key>NAME</key>
+		<string>Zotero</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Reference</string>
+			<key>description</key>
+			<string>Zotero - zoh-TAIR-oh - is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It lives right where you do your work-in the web browser itself.</string>
+			<key>developer</key>
+			<string>Roy Rosenzweig CHNM</string>
+			<key>display_name</key>
+			<string>%NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/bash
+            # Mircosoft Word 2011 Plugin for Zotero
+            # Last Updated April 10, 2014 - Joshua D. Miller
+            # Set Permissions to allow the Zotero Word Plugin to Install
+            [ -e /Applications/Microsoft\ Office\ 2011/ ] &amp;&amp; chmod o+w /Applications/Microsoft\ Office\ 2011/Office/Startup/Word
+            </string>
+			<key>postuninstall_script</key>
+			<string>#!/bin/bash
+            # Uninstall Script for Word Plugin for Zotero
+            # Last Updated April 10, 2014 - Joshua D. Miller
+            # Remove the Zotero Template file
+            [ -e /Applications/Microsoft\ Office\ 2011/Office/Word/Startup/Zotero.dot ] &amp;&amp; rm /Applications/Microsoft\ Office\ 2011/Office/Startup/Word/Zotero.dot
+            # Restore Permissions on the folder /Applications/Microsoft Office 2011/Office/Startup/Word/
+            [ -e /Applications/Microsoft\ Office\ 2011/ ] &amp;&amp; chmod o-w /Applications/Microsoft\ Office\ 2011/Office/Startup/Word
+            </string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.joshua-d-miller.autopkg.munki.zotero</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.joshua-d-miller.autopkg.munki.zotero</key>
+			<dict>
+				<key>git_hash</key>
+				<string>78026742f449538429136f0a32bebf113a2a3c3f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.joshua-d-miller-recipes/Zotero/Zotero.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>e2faadce0798cebeb565eef717414e26e85d363b2b91c764d9ff4ef358fff50c</string>
+			</dict>
+			<key>com.github.joshua-d-miller.download.zotero</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7ffd8d1b5688aceacc2881e8b137b3c6f8438605</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.joshua-d-miller-recipes/Zotero/Zotero.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e127f5248c98b22274ad334d5847a7b9ff7a8aee96776b922ac1b816da6a1cc9</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Sal</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/sal</string>
+		<key>NAME</key>
+		<string>sal_scripts</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Client side scripts for Sal.</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.grahamgilbert.Sal.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.grahamgilbert.Sal.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>23e6605ab64ebbdba6e3545444c5612de594f5eb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahamgilbert-recipes/Sal/Sal.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b5e0953d9d4181f180388147049a6ee8b700648b2ebb273234a5c97c8b4fad12</string>
+			</dict>
+			<key>com.github.grahamgilbert.Sal.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>23e6605ab64ebbdba6e3545444c5612de594f5eb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahamgilbert-recipes/Sal/Sal.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>328f2782b31702e056ac01d82d30e8d6b83578d13921aad6eb462a27a7afa2b9</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

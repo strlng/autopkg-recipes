@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.iStatMenus</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://download.bjango.com/istatmenus/</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/istatmenus</string>
+		<key>NAME</key>
+		<string>iStatMenus</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>iStat Menus is an advanced Mac system monitor, covering an enormous range of stats. It lives right in your Mac’s menubar, so detailed information is only ever a glance or single click away.</string>
+			<key>display_name</key>
+			<string>iStat Menus</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.keeleysam.recipes.Bjango.iStatMenus.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.keeleysam.recipes.Bjango.iStatMenus.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8d869c9e07e0bbc847aef3366b46e750889a484f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/Bjango/iStatMenus.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>6d18fb89bcc8c7da9bf1706caa03479646e30ac74a6b10c562e0910d756429df</string>
+			</dict>
+			<key>com.github.keeleysam.recipes.Bjango.iStatMenus.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bc4a1f7079a455c7e59b0ce0f475b17bf44614bb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/Bjango/iStatMenus.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>64123fe6229f6946d3d92fe04d404530f5fad3cc5c1d430c033beb6a53a18ddd</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
