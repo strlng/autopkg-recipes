@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.Firefox</string>
+	<string>com.github.strlng.munki.firefox</string>
 	<key>Input</key>
 	<dict>
 		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>

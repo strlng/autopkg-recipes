@@ -3,13 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.Audacity</string>
+	<string>com.github.strlng.munki.audacity</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/audacity</string>
-		<key>MUNKI_CATEGORY</key>
-		<string>Multimedia</string>
 		<key>NAME</key>
 		<string>Audacity</string>
 		<key>pkginfo</key>
@@ -21,7 +19,7 @@
 			<key>description</key>
 			<string>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.</string>
 			<key>category</key>
-			<string>%MUNKI_CATEGORY%</string>
+			<string>Multimedia</string>
 			<key>display_name</key>
 			<string>Audacity</string>
 			<key>name</key>

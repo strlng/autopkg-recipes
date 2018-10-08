@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.MicrosoftWord365</string>
+	<string>com.github.strlng.munki.microsoftword365</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOADURL</key>

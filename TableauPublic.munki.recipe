@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.TableauPublic</string>
+	<string>com.github.strlng.munki.tableaupublic</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
