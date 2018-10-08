@@ -6,26 +6,40 @@
 	<string>com.github.strlng.munki.vmwarefusion</string>
 	<key>Input</key>
 	<dict>
+		<key>NAME</key>
+		<string>VMwareFusionPro</string>
+		<key>DISPLAY_NAME</key>
+		<string>VMware Fusion Pro</string>
+		<key>DESCRIPTION</key>
+		<string></string>
+		<key>DEVELOPER</key>
+		<string>VMware</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/vmware</string>
-		<key>NAME</key>
-		<string>VMwareFusion</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>category</key>
-			<string>Productivity</string>
-			<key>description</key>
-			<string></string>
-			<key>developer</key>
-			<string>VMware</string>
-			<key>display_name</key>
-			<string>VMWare Fusion Pro</string>
-			<key>name</key>
-			<string>%NAME%</string>
+		  <key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>catalogs</key>
+		  <array>
+		    <string>testing</string>
+		  </array>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

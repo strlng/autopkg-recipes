@@ -10,6 +10,8 @@
 		<string>/Applications</string>
 		<key>DOWNLOAD_URL</key>
 		<string>https://github.com</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/munkiadmin</string>
 		<key>NAME</key>
@@ -21,7 +23,7 @@
 				<string>testing</string>
 			</array>
 			<key>category</key>
-			<string>Utilities</string>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
 			<string>MunkiAdmin is a GUI for managing munki repositories. It is written with Objective-C and uses in-memory Core Data store as a backend.</string>
 			<key>developer</key>

@@ -8,40 +8,52 @@
 	<dict>
 		<key>DOWNLOADURL</key>
 		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
-		<key>MINIMUM_OS_VERSION</key>
-		<string>10.12.0</string>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/microsoft/office365/%NAME%</string>
-		<key>NAME</key>
-		<string>MicrosoftPowerPoint365</string>
 		<key>PRODUCTID</key>
 		<string>525136</string>
 		<key>SOFTWARETITLE</key>
 		<string>PowerPoint</string>
 		<key>VENDOR</key>
 		<string>Microsoft</string>
+		<key>NAME</key>
+		<string>MicrosoftPowerPoint365</string>
+		<key>DISPLAY_NAME</key>
+		<string>Microsoft PowerPoint 365</string>
+		<key>DESCRIPTION</key>
+		<string>Communicate with confidence. PowerPoint for Mac makes it easy to create, collaborate and effectively present your ideas.</string>
+		<key>DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/microsoft/office365/powerpoint</string>
 		<key>pkginfo</key>
 		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>minimum_os_version</key>
+			<string>10.12.0</string>
 			<key>blocking_applications</key>
 			<array>
 				<string>Microsoft Auto Update</string>
 				<string>Microsoft Error Reporting</string>
 				<string>Microsoft PowerPoint</string>
 			</array>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>description</key>
-			<string>Communicate with confidence. PowerPoint for Mac makes it easy to create, collaborate and effectively present your ideas.</string>
-			<key>display_name</key>
-			<string>Microsoft PowerPoint</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>unattended_install</key>
-			<true/>
-			<key>unattended_uninstall</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

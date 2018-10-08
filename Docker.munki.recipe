@@ -6,26 +6,42 @@
 	<string>com.github.strlng.munki.docker</string>
 	<key>Input</key>
 	<dict>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/docker</string>
-		<key>NAME</key>
-		<string>Docker</string>
 		<key>SPARKLE_FEED_URL</key>
 		<string>https://download.docker.com/mac/stable/appcast.xml</string>
+		<key>NAME</key>
+		<string>Docker</string>
+		<key>DISPLAY_NAME</key>
+		<string>Docker</string>
+		<key>DESCRIPTION</key>
+		<string></string>
+		<key>DEVELOPER</key>
+		<string>Docker Inc</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/docker</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>description</key>
-			<string> </string>
-			<key>developer</key>
-			<string>Docker Inc</string>
-			<key>display_name</key>
-			<string>Docker</string>
-			<key>name</key>
-			<string>%NAME%</string>
+		  <key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>catalogs</key>
+		  <array>
+		    <string>testing</string>
+		  </array>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.11</string>
 			<key>postinstall_script</key>
 			<string>#!/bin/bash
 # Based on scripts/postinstall
@@ -50,7 +66,7 @@ done
 /usr/bin/install -m 0644 -o root -g wheel ${docker_bundle_dir}/Resources/com.docker.vmnetd.plist /Library/LaunchDaemons
 
 /bin/launchctl load /Library/LaunchDaemons/com.docker.vmnetd.plist
-            </string>
+      </string>
 			<key>postuninstall_script</key>
 			<string>#!/bin/bash
 #
@@ -69,9 +85,7 @@ rm -f /var/tmp/com.docker.vmnetd.socket
 for tool in docker docker-compose docker-diagnose docker-machine notary; do
     rm -f /usr/local/bin/${tool}
 done
-            </string>
-			<key>unattended_install</key>
-			<true/>
+      </string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

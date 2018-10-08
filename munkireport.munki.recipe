@@ -8,32 +8,40 @@
 	<dict>
 		<key>BASEURL</key>
 		<string>https://munkireport.journalism.wisc.edu/</string>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>utilities/munkireport</string>
 		<key>NAME</key>
 		<string>Munkireport</string>
-		<key>modules</key>
-		<array/>
+		<key>DISPLAY_NAME</key>
+		<string>Munkireport</string>
+		<key>DESCRIPTION</key>
+		<string>Munkireport is a reporting tool.</string>
+		<key>DEVELOPER</key>
+		<string>Munkireport</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/munkireport</string>
 		<key>pkginfo</key>
 		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
-			<key>category</key>
-			<string>Utilities</string>
-			<key>description</key>
-			<string>Munkireport is a reporting tool.</string>
-			<key>developer</key>
-			<string>Munkireport</string>
-			<key>display_name</key>
-			<string>Munkireport</string>
-			<key>name</key>
-			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
 			<key>unattended_uninstall</key>
 			<true/>
+			<key>minimum_os_version</key>
+			<string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

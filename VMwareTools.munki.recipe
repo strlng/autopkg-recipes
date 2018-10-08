@@ -6,30 +6,40 @@
 	<string>com.github.strlng.munki.vmwaretools</string>
 	<key>Input</key>
 	<dict>
+		<key>NAME</key>
+		<string>VMwareTools</string>
+		<key>DISPLAY_NAME</key>
+		<string>VMware Tools</string>
+		<key>DESCRIPTION</key>
+		<string>With the VMware Tools SVGA driver installed, Workstation supports significantly faster graphics performance. The VMware Tools package provides support required for shared folders and for drag and drop operations. Other tools in the package support synchronization of time in the guest operating system with time on the host, automatic grabbing and releasing of the mouse cursor, copying and pasting between guest and host, and improved mouse performance in some guest operating systems.</string>
+		<key>DEVELOPER</key>
+		<string>VMware</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Utilities</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/vmware</string>
-		<key>NAME</key>
-		<string>VMwareTools</string>
 		<key>pkginfo</key>
 		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
-			<key>category</key>
-			<string>%MUNKI_CATEGORY%</string>
-			<key>description</key>
-			<string>With the VMware Tools SVGA driver installed, Workstation supports significantly faster graphics performance. The VMware Tools package provides support required for shared folders and for drag and drop operations. Other tools in the package support synchronization of time in the guest operating system with time on the host, automatic grabbing and releasing of the mouse cursor, copying and pasting between guest and host, and improved mouse performance in some guest operating systems.</string>
-			<key>developer</key>
-			<string>VMware</string>
-			<key>display_name</key>
-			<string>VMware Tools</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
 			<key>minimum_os_version</key>
 			<string>10.11</string>
-			<key>name</key>
-			<string>%NAME%</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

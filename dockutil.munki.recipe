@@ -28,6 +28,8 @@
 			<string>%MUNKI_DEVELOPER%</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>

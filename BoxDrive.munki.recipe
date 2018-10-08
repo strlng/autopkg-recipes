@@ -6,32 +6,44 @@
 	<string>com.github.strlng.munki.boxdrive</string>
 	<key>Input</key>
 	<dict>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/box</string>
-		<key>NAME</key>
-		<string>BoxDrive</string>
 		<key>URL</key>
 		<string>https://www.box.com/en-gb/resources/downloads/drive</string>
 		<key>USER_AGENT</key>
 		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9</string>
+		<key>NAME</key>
+		<string>BoxDrive</string>
+		<key>DISPLAY_NAME</key>
+		<string>Box Drive</string>
+		<key>DESCRIPTION</key>
+		<string>Box Drive is the incredibly simple way to work with all of your files — even billions of files — right from your desktop, taking up very little hard drive space. Open your Windows Explorer or Mac Finder to find every file you need, edit like you would any local file and save it automatically to the cloud. And, keep enterprise-grade security protecting everything you do.</string>
+		<key>DEVELOPER</key>
+		<string>Box</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/box</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>description</key>
-			<string>Box Drive is the incredibly simple way to work with all of your files — even billions of files — right from your desktop, taking up very little hard drive space. Open your Windows Explorer or Mac Finder to find every file you need, edit like you would any local file and save it automatically to the cloud. And, keep enterprise-grade security protecting everything you do.</string>
-			<key>developer</key>
-			<string>Box</string>
-			<key>category</key>
-			<string>Productivity</string>
-			<key>display_name</key>
-			<string>Box Drive</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>unattended_install</key>
-			<true/>
+		  <key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>catalogs</key>
+		  <array>
+		    <string>testing</string>
+		  </array>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

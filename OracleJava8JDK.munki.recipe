@@ -6,43 +6,51 @@
 	<string>com.github.strlng.munki.oraclejava8jdk</string>
 	<key>Input</key>
 	<dict>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>utilities/javajdk</string>
-		<key>NAME</key>
-		<string>OracleJava8JDK</string>
 		<key>ORACLE_LICENSE_COOKIE</key>
 		<string>oraclelicense=accept-securebackup-cookie</string>
 		<key>SEARCH_PATTERN</key>
 		<string>(?P&lt;url&gt;http://download.oracle.com/otn-pub/java/jdk/.*?/jdk-8u[0-9]+-macosx-x64.dmg)</string>
 		<key>SEARCH_URL</key>
 		<string>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</string>
+		<key>NAME</key>
+		<string>OracleJava8JDK</string>
+		<key>DISPLAY_NAME</key>
+		<string>Oracle Java 8 JDK</string>
+		<key>DESCRIPTION</key>
+		<string>The JDK is a development environment for building applications, applets, and components using the Java programming language. The JDK includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform.</string>
+		<key>DEVELOPER</key>
+		<string>Oracle</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/javajdk</string>
 		<key>pkginfo</key>
 		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
-			</array>
-			<key>category</key>
-			<string>Utilities</string>
-			<key>description</key>
-			<string>The JDK is a development environment for building applications, applets, and components using the Java programming language. The JDK includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform.</string>
-			<key>developer</key>
-			<string>Oracle</string>
-			<key>display_name</key>
-			<string>Oracle Java 8 development kit</string>
-			<key>minimum_os_version</key>
-			<string>10.7.4</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>supported_architectures</key>
-			<array>
-				<string>i386</string>
-				<string>x86_64</string>
 			</array>
 			<key>unattended_install</key>
 			<true/>
 			<key>unattended_uninstall</key>
 			<true/>
+			<key>minimum_os_version</key>
+			<string>10.11</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>i386</string>
+				<string>x86_64</string>
+			</array>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

@@ -8,24 +8,40 @@
 	<dict>
 		<key>DOWNLOAD_URL</key>
 		<string>https://www.skype.com/go/getskype-macosx.dmg</string>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/microsoft/skype</string>
 		<key>NAME</key>
 		<string>Skype</string>
+		<key>DISPLAY_NAME</key>
+		<string>Skype</string>
+		<key>DESCRIPTION</key>
+		<string>Calling, seeing, messaging and sharing with others – wherever they are.</string>
+		<key>DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/microsoft/skype</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>description</key>
-			<string>Calling, seeing, messaging and sharing with others – wherever they are.</string>
-			<key>display_name</key>
-			<string>Skype</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>unattended_install</key>
-			<true/>
+		  <key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>catalogs</key>
+		  <array>
+		    <string>testing</string>
+		  </array>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
