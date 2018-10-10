@@ -10,12 +10,6 @@ com.github.strlng.munki.handbrake
 com.github.strlng.munki.hazel
 com.github.strlng.munki.istatmenus
 com.github.strlng.munki.malwarebytes3
-com.github.strlng.munki.microsoftoffice365
-com.github.strlng.munki.microsoftexcel365
-com.github.strlng.munki.microsoftonenote365
-com.github.strlng.munki.microsoftoutlook365
-com.github.strlng.munki.microsoftpowerpoint365
-com.github.strlng.munki.microsoftword365
 com.github.strlng.munki.munkiadmin
 com.github.strlng.munki.munkireport
 com.github.strlng.munki.munkitools3
