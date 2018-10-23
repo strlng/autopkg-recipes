@@ -16,6 +16,8 @@ com.github.strlng.munki.munkitools3
 com.github.strlng.munki.oraclejava8jdk
 com.github.strlng.munki.outset
 com.github.strlng.munki.pacifist
+com.github.strlng.munki.r
+com.github.strlng.munki.rstudio
 com.github.strlng.munki.skype
 com.github.strlng.munki.tableaupublic
 com.github.strlng.munki.transmission
