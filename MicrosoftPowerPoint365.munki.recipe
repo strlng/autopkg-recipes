@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.microsoftpowerpoint365</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>MINIMUM_OS_VERSION</key>
+		<string>10.12.0</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/microsoft/office365/powerpoint</string>
+		<key>NAME</key>
+		<string>MicrosoftPowerPoint365</string>
+		<key>DISPLAY_NAME</key>
+		<string>Microsoft PowerPoint</string>
+		<key>DESCRIPTION</key>
+		<string>Communicate with confidence. PowerPoint for Mac makes it easy to create, collaborate and effectively present your ideas.</string>
+		<key>DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>PRODUCTID</key>
+		<string>525136</string>
+		<key>SOFTWARETITLE</key>
+		<string>PowerPoint</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.13</string>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft Auto Update</string>
+				<string>Microsoft Error Reporting</string>
+				<string>Microsoft PowerPoint</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Microsoft PowerPoint 365</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.munki.Microsoft PowerPoint 365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e8d5bec67776f13a1789c086923f80989b21de02</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Microsoft PowerPoint 365/Microsoft PowerPoint 365.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8c183313402a5f985a815817991d3fea79350d34ec48147090223340f60c22e5</string>
+			</dict>
+			<key>com.github.rtrouton.download.microsoftpowerpoint365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftPowerPoint365/MicrosoftPowerPoint365.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>3648fd34d13d7cf7f363996357ea5776eecd40f6d6923fc015fc6132d6ea73f7</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.microsoftpowerpoint365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftPowerPoint365/MicrosoftPowerPoint365.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>ebfa49460997626cbb0a12296c562ec8e7d4dc02480d93302fc766645db13f25</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

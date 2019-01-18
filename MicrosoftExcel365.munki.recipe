@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.munki.microsoftexcel365</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>MINIMUM_OS_VERSION</key>
+		<string>10.12.0</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/microsoft/office365/excel</string>
+		<key>NAME</key>
+		<string>MicrosoftExcel365</string>
+		<key>DISPLAY_NAME</key>
+		<string>Microsoft Excel</string>
+		<key>DESCRIPTION</key>
+		<string>See your data in new, intuitive ways. Powerful charts, graphs, and keyboard shortcuts turn columns of numbers into valuable information, so you can work easier.</string>
+		<key>DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>PRODUCTID</key>
+		<string>525135</string>
+		<key>SOFTWARETITLE</key>
+		<string>Excel</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>name</key>
+		  <string>%NAME%</string>
+		  <key>display_name</key>
+		  <string>%DISPLAY_NAME%</string>
+		  <key>description</key>
+		  <string>%DESCRIPTION%</string>
+		  <key>developer</key>
+		  <string>%DEVELOPER%</string>
+		  <key>category</key>
+		  <string>%MUNKI_CATEGORY%</string>
+		  <key>unattended_install</key>
+		  <true/>
+		  <key>unattended_uninstall</key>
+		  <true/>
+		  <key>minimum_os_version</key>
+		  <string>10.13</string>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft Auto Update</string>
+				<string>Microsoft Error Reporting</string>
+				<string>Microsoft Excel</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Microsoft Excel 365</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.munki.Microsoft Excel 365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e8d5bec67776f13a1789c086923f80989b21de02</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Microsoft Excel 365/Microsoft Excel 365.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>f0a04974b9448fec507f772273d6cd6af8bcfb40dbffcbfd29f2bd17a6b3af13</string>
+			</dict>
+			<key>com.github.rtrouton.download.microsoftexcel365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftExcel365/MicrosoftExcel365.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0cce58fb09aed964c58e59288abbb5c0bb9d5e14702dc1c6cf1c0d08a51be31e</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.microsoftexcel365</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8a29db2944790f4a29cc98618e0d2e87c96668d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftExcel365/MicrosoftExcel365.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>adb5b2a1440587ba36ed80d21c1f26a3d718b3545ead24dbb34a2eeb633712b8</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
