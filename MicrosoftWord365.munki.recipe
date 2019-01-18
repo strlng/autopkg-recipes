@@ -20,6 +20,8 @@
 		<string>The Word you want. State-of-the-art editing, reviewing, and sharing tools make creating and polishing documents easy.</string>
 		<key>DEVELOPER</key>
 		<string>Microsoft</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
 		<key>PRODUCTID</key>
 		<string>525134</string>
 		<key>SOFTWARETITLE</key>

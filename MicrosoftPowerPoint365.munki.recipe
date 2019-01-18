@@ -20,6 +20,8 @@
 		<string>Communicate with confidence. PowerPoint for Mac makes it easy to create, collaborate and effectively present your ideas.</string>
 		<key>DEVELOPER</key>
 		<string>Microsoft</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
 		<key>PRODUCTID</key>
 		<string>525136</string>
 		<key>SOFTWARETITLE</key>

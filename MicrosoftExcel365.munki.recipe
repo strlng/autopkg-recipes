@@ -20,6 +20,8 @@
 		<string>See your data in new, intuitive ways. Powerful charts, graphs, and keyboard shortcuts turn columns of numbers into valuable information, so you can work easier.</string>
 		<key>DEVELOPER</key>
 		<string>Microsoft</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
 		<key>PRODUCTID</key>
 		<string>525135</string>
 		<key>SOFTWARETITLE</key>
