@@ -10,28 +10,44 @@
 	<string>com.github.strlng.autopkg.munki.SolsticeUSB</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
 		<key>APP_FILENAME</key>
-		<string>usb_Solstice Client</string>
+		<string>Solstice Client</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/%NAME%</string>
+		<string>apps/mersive</string>
 		<key>NAME</key>
 		<string>Solstice</string>
+		<key>DISPLAY_NAME</key>
+		<string>Solstice</string>
+		<key>DEVELOPER</key>
+		<string>Mersive</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Productivity</string>
+		<key>DESCRIPTION</key>
+		<string></string>
 		<key>pkginfo</key>
 		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>minimum_os_version</key>
+			<string>10.13</string>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
-			<key>description</key>
-			<string>Moon Almanac is an astronomy program that provides easy access to Moon information from the past, present and future.</string>
-			<key>developer</key>
-			<string>Mersive Technologies</string>
-			<key>display_name</key>
-			<string>Solstice</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>unattended_install</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
