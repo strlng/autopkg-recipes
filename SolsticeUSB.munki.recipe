@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Solstice and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.strlng.autopkg.munki.SolsticeUSB</string>
+	<string>com.github.strlng.autopkg.munki.solsticeusb</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_DESTINATION</key>
