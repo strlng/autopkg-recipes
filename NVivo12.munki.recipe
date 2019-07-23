@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.autopkg.munki.NVivo12</string>
+	<string>com.github.strlng.autopkg.munki.nvivo12</string>
 	<key>Input</key>
 	<dict>
 		<key>DISPLAY_NAME</key>
