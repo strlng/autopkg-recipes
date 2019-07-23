@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.autopkg.munki.NVivo12</string>
+	<key>Input</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>NVivo 12</string>
+		<key>MAJOR_VERSION</key>
+		<string>12</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/nvivo</string>
+		<key>NAME</key>
+		<string>NVivo12</string>
+		<key>SEARCH_PATTERN</key>
+		<string>(?P&lt;url&gt;http(s)?\://download\.qsrinternational\.com/Software/NVivo%MAJOR_VERSION%forMac/NVivo( [0-9]{2})?\.dmg)</string>
+		<key>SEARCH_URL</key>
+		<string>http://qsrinternational.com/nvivo/support-overview/downloads</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>NVivo 12 for Mac is your platform for analyzing all forms of unstructured data.  Quickly interrogate data using powerful search, query and visualization tools.  Get the big picture or get into the detail.  Uncover subtle connections, rigorously justify findings, and effortlessly share your work.</string>
+			<key>developer</key>
+			<string>QSR International</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.andrewvalentine.munki.NVivo12</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+				<key>sha256_hash</key>
+				<string>PROCESSOR FILEPATH NOT FOUND</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.andrewvalentine.munki.NVivo12</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6dcce1be55c6b6ca5a8b74dee144a2c3a03b4b76</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.andrewvalentine-recipes/NVivo/NVivo12.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>17709c3babd713f4bc5e4733bfb6564d40d20c54e67ee8285d566ec69eb1d3ca</string>
+			</dict>
+			<key>com.github.joshua-d-miller.download.nvivo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a7b9bf43260b1cef77e6c29a0bb77aaa6f71cdf8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.joshua-d-miller-recipes/NVivo/NVivo.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>041f8dbb2b37ab8d2f4a12554c6cdf4fc3f8b0525f47f9bd48ae11b2761293e0</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
