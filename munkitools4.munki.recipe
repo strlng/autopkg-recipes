@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.autopkg-recipes.munki.munkitools3</string>
+	<string>com.github.strlng.autopkg-recipes.munki.munkitools4</string>
 	<key>Input</key>
 	<dict>
 		<key>INCLUDE_PRERELEASES</key>
