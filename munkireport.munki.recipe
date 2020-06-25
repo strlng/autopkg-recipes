@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>BASEURL</key>
-		<string>https://munkireport.journalism.wisc.edu</string>
+		<string>http://munkireport.journalism.wisc.edu</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/munkireport</string>
 		<key>NAME</key>
