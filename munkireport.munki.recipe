@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>BASEURL</key>
-		<string>http://munkireport.journalism.wisc.edu</string>
+		<string>https://munkireport.journalism.wisc.edu</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/munkireport</string>
 		<key>NAME</key>
@@ -30,20 +30,6 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>Process</key>
-    <array>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>curl_opts</key>
-                <array>
-                	<string>--insecure</string>
-                </array>
-            </dict>
-        </dict>
-    </array>
 	<key>ParentRecipe</key>
 	<string>com.github.munkireport.autopkg.munki</string>
 	<key>ParentRecipeTrustInfo</key>
