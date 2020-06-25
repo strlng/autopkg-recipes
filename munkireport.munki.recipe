@@ -7,41 +7,27 @@
 	<key>Input</key>
 	<dict>
 		<key>BASEURL</key>
-		<string>https://munkireport.journalism.wisc.edu/</string>
-		<key>NAME</key>
-		<string>Munkireport</string>
-		<key>DISPLAY_NAME</key>
-		<string>Munkireport</string>
-		<key>DESCRIPTION</key>
-		<string>Munkireport is a reporting tool.</string>
-		<key>DEVELOPER</key>
-		<string>Munkireport</string>
-		<key>MUNKI_CATEGORY</key>
-		<string>Utilities</string>
+		<string>https://munkireport.journalism.wisc.edu</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>utilities/munkireport</string>
+		<key>NAME</key>
+		<string>Munkireport</string>
+		<key>modules</key>
+		<array/>
 		<key>pkginfo</key>
 		<dict>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>display_name</key>
-			<string>%DISPLAY_NAME%</string>
-			<key>description</key>
-			<string>%DESCRIPTION%</string>
-			<key>developer</key>
-			<string>%DEVELOPER%</string>
-			<key>category</key>
-			<string>%MUNKI_CATEGORY%</string>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
+			<key>description</key>
+			<string>Munkireport is a reporting tool.</string>
+			<key>display_name</key>
+			<string>Munkireport</string>
+			<key>name</key>
+			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-			<key>unattended_uninstall</key>
-			<true/>
-			<key>minimum_os_version</key>
-			<string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -53,20 +39,20 @@
 			<key>MunkiReportPackager</key>
 			<dict>
 				<key>git_hash</key>
-				<string>45f23736c9d32ae34e34151c72039efd7a0b23cd</string>
+				<string>2f69dbf4cc499ab1fc4f483c47f4d62269860657</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.munkireport-recipes/MunkiReportPackager.py</string>
 				<key>sha256_hash</key>
-				<string>4901ed95c07141ba55387ea3f16244aec63d126df40ea1a8a7f12f6bb9d993ae</string>
+				<string>43774e2426c7afb5f5c357d6305fe362f24ea0db91f295e98f65c60ce63ce9c0</string>
 			</dict>
 			<key>MunkiReportUrlCreator</key>
 			<dict>
 				<key>git_hash</key>
-				<string>fbe86e44e82f4f8743745df9e88e5b58e05abea7</string>
+				<string>311a7722aec4b8a6333b6beb1390f095ea9eae05</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.munkireport-recipes/MunkiReportUrlCreator.py</string>
 				<key>sha256_hash</key>
-				<string>abaf3b2c246274617c2dd6065bce7ad7abc29a33be124f3ab05ae6d7e8ae4561</string>
+				<string>2f780c74bdefdc5225fa44d62e2cbeab7fe9602e42c7de552d9f97012c9b1309</string>
 			</dict>
 		</dict>
 		<key>parent_recipes</key>
@@ -74,20 +60,20 @@
 			<key>com.github.munkireport.autopkg.munki</key>
 			<dict>
 				<key>git_hash</key>
-				<string>8b0f30e6f08ad7f98502eded596a25a6aabf4c05</string>
+				<string>6fbb6297c1c0a35f7bc540c669f9b5d8a3a92b01</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.munkireport-recipes/munkireport.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>cf065010c260f40075a882f5d46bbfa5d1828e6860ad27bbbb646aa3264f5613</string>
+				<string>867a5c2ff2631dbdc36a4bff159904e529bc71dc4ad01591bda44886238a88b5</string>
 			</dict>
 			<key>com.github.munkireport.autopkg.pkg</key>
 			<dict>
 				<key>git_hash</key>
-				<string>1a84b4a0a9ecbb9fe48e41709933ca28bc8e1bec</string>
+				<string>5149ed351b94b10892e6f560cbbb61a8103b1d7b</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.munkireport-recipes/munkireport.pkg.recipe</string>
 				<key>sha256_hash</key>
-				<string>3bd7c98def478cefe4fc95cd2e84e1bc79449ca0f64456b027ece62042024203</string>
+				<string>481dac05dc516b2a7014675e718908265fbed5eac5419d6733b461b84a4e2114</string>
 			</dict>
 		</dict>
 	</dict>
