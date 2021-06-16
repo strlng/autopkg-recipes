@@ -7,6 +7,7 @@ com.github.strlng.autopkg-recipes.munki.handbrake
 com.github.strlng.autopkg-recipes.munki.munkiadmin
 com.github.strlng.autopkg-recipes.munki.munkireport
 com.github.strlng.autopkg-recipes.munki.munkitools5
+com.github.strlng.autopkg-recipes.munki.microsoftoffice365businessprosuite
 com.github.strlng.autopkg-recipes.munki.outset
 com.github.strlng.autopkg-recipes.munki.pacifist
 com.github.strlng.autopkg-recipes.munki.r
