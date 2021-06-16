@@ -1,3 +1,4 @@
+com.github.strlng.autopkg-recipes.munki.audacity
 com.github.strlng.autopkg-recipes.munki.boxdrive
 com.github.strlng.autopkg-recipes.munki.dockutil
 com.github.strlng.autopkg-recipes.munki.firefox

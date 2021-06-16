@@ -6,58 +6,55 @@
 	<string>com.github.strlng.autopkg-recipes.munki.audacity</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>Audacity</string>
-		<key>DISPLAY_NAME</key>
-		<string>Audacity</string>
-		<key>DESCRIPTION</key>
-		<string>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.</string>
-		<key>DEVELOPER</key>
-		<string>Audacity</string>
-		<key>MUNKI_CATEGORY</key>
-		<string>Multimedia</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/audacity</string>
+		<key>NAME</key>
+		<string>Audacity</string>
+		<key>SEARCH_PATTERN</key>
+		<string>https://university.fosshub.com/Protected/[\S]+\/[\S]+\/audacity-macos-[\S]+\.dmg</string>
+		<key>SEARCH_URL</key>
+		<string>https://university.fosshub.com/projects.json</string>
 		<key>pkginfo</key>
 		<dict>
-		  <key>name</key>
-		  <string>%NAME%</string>
-		  <key>display_name</key>
-		  <string>%DISPLAY_NAME%</string>
-		  <key>description</key>
-		  <string>%DESCRIPTION%</string>
-		  <key>developer</key>
-		  <string>%DEVELOPER%</string>
-		  <key>category</key>
-		  <string>%MUNKI_CATEGORY%</string>
-		  <key>catalogs</key>
-		  <array>
-		    <string>testing</string>
-		  </array>
-		  <key>unattended_install</key>
-		  <true/>
-		  <key>unattended_uninstall</key>
-		  <true/>
-		  <key>minimum_os_version</key>
-		  <string>10.11</string>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, Mac OS X, GNU/Linux and other operating systems.</string>
+			<key>display_name</key>
+			<string>Audacity</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.timsutton.munki.audacity</string>
+	<string>com.github.dataJAR-recipes.munki.Audacity</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
 		<dict/>
 		<key>parent_recipes</key>
 		<dict>
-			<key>com.github.timsutton.munki.audacity</key>
+			<key>com.github.dataJAR-recipes.download.Audacity</key>
 			<dict>
 				<key>git_hash</key>
-				<string>4726c10a023ea31ae48c6729191a472b1a56a57f</string>
+				<string>6449962dd93d1e372c9ec918729edf7b03a0da26</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.timsutton-recipes/Audacity/Audacity.munki.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Audacity/Audacity.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>9fc91e355e6ed1a6ff8293b486feeaedfa4a2c994a852d55df22cff6f15d4f20</string>
+				<string>7ca398a7d0922183bff0e6ad1a00a2c2907bab7dd38d85074f6d7ed57d7abc9e</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Audacity</key>
+			<dict>
+				<key>git_hash</key>
+				<string>86122c9b8c12f79352790fb321883b5c77e4a8f8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Audacity/Audacity.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>006705bf6020d460d8d6658dc1579ed3ba0b55ed1118b6caef939d2163acdae4</string>
 			</dict>
 		</dict>
 	</dict>
