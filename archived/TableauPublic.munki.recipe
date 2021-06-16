@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.autopkg-recipes.munki.r</string>
+	<string>com.github.strlng.autopkg-recipes.munki.tableaupublic</string>
 	<key>Input</key>
 	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://public.tableau.com/s/download/public/mac</string>
 		<key>NAME</key>
-		<string>r</string>
+		<string>TableauPublic</string>
 		<key>DISPLAY_NAME</key>
-		<string>R</string>
+		<string>Tableau Public</string>
 		<key>DESCRIPTION</key>
-		<string>R is a language and environment for statistical computing and graphics which provides a wide variety of statistical and graphical techniques: linear and nonlinear modelling, statistical tests, time series analysis, classification, clustering, etc.</string>
+		<string>Data in. Brilliance out. Visualize and Share Your Data in Minutes.</string>
 		<key>DEVELOPER</key>
-		<string>R Foundation</string>
+		<string>Tableau</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Productivity</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/r</string>
+		<string>apps/tableau</string>
 		<key>pkginfo</key>
 		<dict>
 		  <key>name</key>
@@ -39,34 +41,34 @@
 		  <key>unattended_uninstall</key>
 		  <true/>
 		  <key>minimum_os_version</key>
-		  <string>10.12</string>
+		  <string>10.11</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.munki.R</string>
+	<string>com.github.foigus.munki.tableau-public</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
 		<dict/>
 		<key>parent_recipes</key>
 		<dict>
-			<key>io.github.hjuutilainen.download.R</key>
+			<key>com.github.foigus.download.tableau-public</key>
 			<dict>
 				<key>git_hash</key>
-				<string>5a9cc4992ca3ba38db925d17f9d5a0fb9e99741a</string>
+				<string>65424577c302e6761d9181ffdea0ed4a7a53434d</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hjuutilainen-recipes/R/R.download.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.foigus-recipes/Tableau/TableauPublic.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>7e2e2c65563ded25642ca3b17b19d22295f0f2b7afbe8ae75e5e5659bb1c3311</string>
+				<string>69d559ba99fb6117e867778bc0ed6594cfcb5feb8a301f16d1901ed30fd73f93</string>
 			</dict>
-			<key>io.github.hjuutilainen.munki.R</key>
+			<key>com.github.foigus.munki.tableau-public</key>
 			<dict>
 				<key>git_hash</key>
-				<string>c3d5e772fa36dc9a842aa630dc6d484aab4abb7d</string>
+				<string>4031ae79f85f35882dab6afa86ded0a311c99d19</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hjuutilainen-recipes/R/R.munki.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.foigus-recipes/Tableau/TableauPublic.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>8f78709f41dea3e6c964e45d663cad6f0cd37d355b4bed571b88f986019198bd</string>
+				<string>77772275f00e9f9fb0629adecdc74edbc484b55f5fe75019ac58ddda85b6b8d1</string>
 			</dict>
 		</dict>
 	</dict>

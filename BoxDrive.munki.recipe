@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.boxdrive</string>
+	<string>com.github.strlng.autopkg-recipes.munki.boxdrive</string>
 	<key>Input</key>
 	<dict>
 		<key>URL</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.dockutil</string>
+	<string>com.github.strlng.autopkg-recipes.munki.dockutil</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_CATEGORY</key>

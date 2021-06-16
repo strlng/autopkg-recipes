@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.munkiadmin</string>
+	<string>com.github.strlng.autopkg-recipes.munki.munkiadmin</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_DESTINATION</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.zoom</string>
+	<string>com.github.strlng.autopkg-recipes.munki.zoom</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>

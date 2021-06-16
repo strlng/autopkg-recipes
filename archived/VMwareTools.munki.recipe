@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.autopkg-recipes.munki.vmwaretools</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>VMwareTools</string>
+		<key>DISPLAY_NAME</key>
+		<string>VMware Tools</string>
+		<key>DESCRIPTION</key>
+		<string>With the VMware Tools SVGA driver installed, Workstation supports significantly faster graphics performance. The VMware Tools package provides support required for shared folders and for drag and drop operations. Other tools in the package support synchronization of time in the guest operating system with time on the host, automatic grabbing and releasing of the mouse cursor, copying and pasting between guest and host, and improved mouse performance in some guest operating systems.</string>
+		<key>DEVELOPER</key>
+		<string>VMware</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/vmware</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>description</key>
+			<string>%DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%DEVELOPER%</string>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>minimum_os_version</key>
+			<string>10.11</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jessepeterson.munki.VMwareTools</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>ImageConverter</key>
+			<dict>
+				<key>git_hash</key>
+				<string>65e1285257ffe3184caac53d32c21272c96f57ea</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jessepeterson-recipes/VMware/ImageConverter.py</string>
+				<key>sha256_hash</key>
+				<string>35c4a17c8a4b65a944a872d622f24f02188584864aef5de01d712895d3a2ed7e</string>
+			</dict>
+			<key>VMwareToolsURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>be163231f9d282d3976df615dbe44162500a0466</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jessepeterson-recipes/VMware/VMwareToolsURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>94d43034df98c3b017ccc4858cefd7f51bdf8c4598d892d902ebaf697c9eb8f0</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jessepeterson.munki.VMwareTools</key>
+			<dict>
+				<key>git_hash</key>
+				<string>570f6dafffe4ee9dca9ee443855d00019a97df80</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jessepeterson-recipes/VMware/VMwareTools.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>975e4c27468cda4e60ee706ed9b359667e9c00a93f0218c54d20f50d8a8f9f3d</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

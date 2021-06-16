@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.outset</string>
+	<string>com.github.strlng.autopkg-recipes.munki.outset</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

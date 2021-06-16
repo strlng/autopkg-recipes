@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.strlng.munki.Shimo</string>
+	<string>com.github.strlng.autopkg-recipes.munki.Shimo</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
