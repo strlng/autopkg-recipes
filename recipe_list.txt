@@ -13,6 +13,7 @@ com.github.strlng.autopkg-recipes.munki.pacifist
 com.github.strlng.autopkg-recipes.munki.r
 com.github.strlng.autopkg-recipes.munki.rstudio
 com.github.strlng.autopkg-recipes.munki.skype
+com.github.strlng.autopkg-recipes.munki.solsticeusb
 com.github.strlng.autopkg-recipes.munki.vlc
 com.github.strlng.autopkg-recipes.munki.zoom
 MakeCatalogs.munki
