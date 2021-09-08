@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.strlng.autopkg-recipes.munki.solsticeclient</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/mersive</string>
+		<key>NAME</key>
+		<string>Solstice</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>Mersive Solstice is a high-performance in-room collaboration platform that improves the usability and productivity of meeting and learning spaces. Solstice enables users on any device to easily share, control, and mark up content on in-room displays to drive more efficient, engaging, and productive meetings.</string>
+			<key>developer</key>
+			<string>Mersive</string>
+			<key>display_name</key>
+			<string>Solstice Client</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>preinstall_script</key>
+			<string>#!/bin/sh
+rm -r /Applications/Solstice\ Client.app
+exit 0
+            </string>
+			<key>postinstall_script</key>
+			<string>#!/bin/sh
+# Install the Solstice Audio Driver
+# Joshua D. Miller - josh@psu.edu
+# The Pennsylvania State University
+# Last Updated - May 21, 2021
+
+/usr/sbin/installer -pkg "/Applications/Mersive Solstice.app/Contents/Resources/Solstice.pkg" -target /
+            </string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.joshua-d-miller.autopkg.munki.solsticeclient</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.joshua-d-miller.autopkg.munki.solsticeclient</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0528d3bbeeefced706a016fdce0dbaca60326836</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.joshua-d-miller-recipes/Mersive/SolsticeClient.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>3978ea741a13f5e208cbb490c9937e1817505107cdfd1dffb27e0a2b6c86aa04</string>
+			</dict>
+			<key>com.github.joshua-d-miller.download.solsticeclient</key>
+			<dict>
+				<key>git_hash</key>
+				<string>907102fcaba76a8a83ff30292c35f8ae66d08468</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.joshua-d-miller-recipes/Mersive/SolsticeClient.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2b92d7cb61fa7af0342d1aa5f7b4f348d043bfb637615d383a0234fa8d6f1936</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
